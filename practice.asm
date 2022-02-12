@@ -1,0 +1,12 @@
+CODE SEGMENT
+    ASSUME CS:CODE
+    MOV AX,5000H
+    MOV DS,AX
+    MOV SI,1000H
+    MOV AX,[SI]
+    MOV BX,[SI+2]
+    ADD AX,BX
+    MOV [SI+4],AX
+    HLT
+    CODE ENDS
+END
