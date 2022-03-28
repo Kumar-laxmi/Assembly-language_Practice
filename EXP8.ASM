@@ -1,0 +1,20 @@
+.MODEL SMALL
+
+.DATA
+   LIST DB 10H,20H,30H,40H,50H
+
+.CODE
+   MOV BX, OFFSET LIST
+
+   MOV AL,[BX]
+   INC BX
+   ADD AL,[BX]
+   INC BX
+   ADD AL,[BX]
+   INC BX
+   ADD AL,[BX]
+   INC BX
+   ADD AL,[BX]
+
+   MOV [SI],AL
+END
