@@ -6,8 +6,6 @@ include 'emu8086.inc'
 
 .DATA
    ARR DB 10 DUB(?)
-   MSG1 DB 10,13,"ENTER THE 10 NUMBERS WITHOUT SPACE: $"
-   MSG2
 
 .CODE
    MAIN PROC
